@@ -1,0 +1,39 @@
+name: Publish Netlify and Surge
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: mirrors
+  cancel-in-progress: true
+jobs:
+  netlify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python build.py
+      - name: Publish Netlify
+        run: python scripts/deploy_netlify.py
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 36b7cc36-7833-41b9-994f-e2c88c957ad6
+  surge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python build.py
+      - name: Publish Surge
+        run: npx --yes surge@0.44.6 ./dist reformed-three-creeds-20261017-v1.surge.sh
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}

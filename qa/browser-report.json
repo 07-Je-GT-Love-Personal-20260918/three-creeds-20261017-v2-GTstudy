@@ -1,0 +1,48 @@
+{
+  "checked": "2026-10-17T13:15:44.560Z",
+  "viewports": [
+    {
+      "name": "desktop",
+      "viewport": 1440,
+      "width": 1440,
+      "clauses": 38,
+      "missing": [],
+      "overflow": []
+    },
+    {
+      "name": "tablet",
+      "viewport": 820,
+      "width": 820,
+      "clauses": 38,
+      "missing": [],
+      "overflow": []
+    },
+    {
+      "name": "mobile",
+      "viewport": 390,
+      "width": 390,
+      "clauses": 38,
+      "missing": [],
+      "overflow": []
+    },
+    {
+      "name": "small",
+      "viewport": 320,
+      "width": 320,
+      "clauses": 38,
+      "missing": [],
+      "overflow": []
+    }
+  ],
+  "interactions": [
+    "reader switching",
+    "cloze reveal",
+    "map",
+    "story",
+    "quiz",
+    "search",
+    "mobile TOC",
+    "theme"
+  ],
+  "errors": []
+}

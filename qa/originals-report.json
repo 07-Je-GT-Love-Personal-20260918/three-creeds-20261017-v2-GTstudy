@@ -1,0 +1,49 @@
+{
+  "checked": "2026-10-17T13:16:32.569Z",
+  "textCheck": {
+    "count": 232,
+    "mismatches": []
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missing": []
+    },
+    {
+      "width": 820,
+      "scrollWidth": 820,
+      "missing": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "missing": []
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "missing": []
+    }
+  ],
+  "readers": [
+    {
+      "key": "apostles",
+      "exactIgnoringLayoutWhitespace": true,
+      "overflow": false
+    },
+    {
+      "key": "nicene",
+      "exactIgnoringLayoutWhitespace": true,
+      "overflow": false
+    },
+    {
+      "key": "athanasian",
+      "exactIgnoringLayoutWhitespace": true,
+      "overflow": false
+    }
+  ],
+  "download": "athanasian-original-reader.html",
+  "localImport": "passed",
+  "errors": []
+}
