@@ -1,4 +1,15 @@
 {
   "netlifySiteId": "36b7cc36-7833-41b9-994f-e2c88c957ad6",
-  "netlifyUrl": "https://reformed-three-creeds-20261017-v1.netlify.app"
+  "netlifyUrl": "https://reformed-three-creeds-20261017-v1.netlify.app",
+  "githubPagesUrl": "https://07-je-gt-love-personal-20260918.github.io/reformed-three-creeds-20261017-v1/",
+  "surgeUrl": "https://reformed-three-creeds-20261017-v1.surge.sh/",
+  "repository": "https://github.com/07-Je-GT-Love-Personal-20260918/reformed-three-creeds-20261017-v1",
+  "verified": "2026-10-17",
+  "sourceCommit": "cb87f81",
+  "publicChecks": {
+    "pagesPerHost": 8,
+    "hosts": 3,
+    "originalSectionsPerHost": 232,
+    "mismatches": 0
+  }
 }
