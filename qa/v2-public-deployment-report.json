@@ -1,0 +1,311 @@
+[
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/",
+    "status": 200,
+    "bytes": 235895,
+    "sha256": "c2c820fba1f09ed1508ba3a69e4aead60fe84e3cf3cd528ba2a17ea36fc16d36",
+    "v2": true
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/library.html",
+    "status": 200,
+    "bytes": 319772,
+    "sha256": "9c188882eed48cc0c65965bf6cff38ee2178cc5e4266bb74118cba9611c8c47c"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/background.html",
+    "status": 200,
+    "bytes": 24018,
+    "sha256": "cccf3df911cf1e02611c3d3444c24c306a10cae6de129b66eb5a9bb280434d8b"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/reader-apostles.html",
+    "status": 200,
+    "bytes": 1576,
+    "sha256": "73c8ff80a3ce07a03211a3baaecaa34c2bdfad231fcf3b34160315dcc7208711"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/reader-nicene.html",
+    "status": 200,
+    "bytes": 2049,
+    "sha256": "74587aa4707143077a647204db9a5ae5992c88e886cbf8d61d3b98ae52e9b12b"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/reader-athanasian.html",
+    "status": 200,
+    "bytes": 4027,
+    "sha256": "a88cae9302c7c740d8663f09461f398df8cabe4d63b59810298e7407a9e6a2ae"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/app.js",
+    "status": 200,
+    "bytes": 19024,
+    "sha256": "74f34b4b224b586752cb151676b36f8e5ab1c687e3f0946fe23332617de173ff"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/v2.js",
+    "status": 200,
+    "bytes": 4693,
+    "sha256": "7fb9b1a8f9d368bdcd6b14da92fa3658fe8449b3232ebecb7290a53c697e7cb0"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/styles.css",
+    "status": 200,
+    "bytes": 22420,
+    "sha256": "6360a22215d0487ea575d2393a2e69482c1447c589210e585e337ba9e9a042ab"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/v2.css",
+    "status": 200,
+    "bytes": 32849,
+    "sha256": "6938ffccca8884ff1f1e97fb2c5520566c554791a22d8912ebf5e2650d1193a7"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/assets/creed-story-apostles.svg",
+    "status": 200,
+    "bytes": 5254,
+    "sha256": "3c30fdc5f7ab49b903458dbfef4804db8a8d1ebaeac712e461a0272e4ece4d29"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/assets/creed-story-nicene.svg",
+    "status": 200,
+    "bytes": 4586,
+    "sha256": "a62d1301dc216cd6cd90c88353f7d522afa5876259d30213f5edc44fa8a771b6"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/assets/creed-story-athanasian.svg",
+    "status": 200,
+    "bytes": 3689,
+    "sha256": "b4521bd7b55cc5aa68b703e3887affc91767265d69145b666da83a6cc5be839f"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/text-verification.json",
+    "status": 200,
+    "bytes": 79435,
+    "sha256": "7e7b0d6147f0013f203b2547c5c29304acadb091c6ff132e3376e43c1c608cda"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/source-audit.md",
+    "status": 200,
+    "bytes": 6880,
+    "sha256": "c664db6b66cb370625c55900849b02d0ca7ea2c2b7ba682a901fa4ba4759f703"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/text-comparison.md",
+    "status": 200,
+    "bytes": 5768,
+    "sha256": "1717907b212a3f6c26288f5eae3ed59925c540b2b412c7738b4b99461500b983"
+  },
+  {
+    "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/favicon.svg",
+    "status": 200,
+    "bytes": 269,
+    "sha256": "c86ddd3e5d241ec7c0dff41b63989c12fd6188921a2cf7bc9f3971afa44f7e29"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/",
+    "status": 200,
+    "bytes": 235843,
+    "sha256": "f1e717c6f6222acfc0e4d2e98cd697d2889448379ce063fbcb48a4e13cbe42ad",
+    "v2": true
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/library.html",
+    "status": 200,
+    "bytes": 319745,
+    "sha256": "6d746f17c2e9745ebcd09aef9483e8e8b354d6c8837db0b4e5e47010505fb429"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/background.html",
+    "status": 200,
+    "bytes": 23988,
+    "sha256": "c7bf98857e2b5bc98aba7aa4204a648e46767cca117dbd3a841a5909f778e846"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/reader-apostles.html",
+    "status": 200,
+    "bytes": 1563,
+    "sha256": "7591a580814373294b87cf89c428717bc1c3949fedb9ab870505ffc983a424db"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/reader-nicene.html",
+    "status": 200,
+    "bytes": 2036,
+    "sha256": "e44ba8498bdcb9c6028a13b9d3c876f4399c6945168b3c69b9ee4fe3d3029b37"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/reader-athanasian.html",
+    "status": 200,
+    "bytes": 4014,
+    "sha256": "6216315fd056f3d3b910cc0fccc65f9f92f29b4844c4d8070c71321a61bc61f0"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/app.js",
+    "status": 200,
+    "bytes": 19024,
+    "sha256": "74f34b4b224b586752cb151676b36f8e5ab1c687e3f0946fe23332617de173ff"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/v2.js",
+    "status": 200,
+    "bytes": 4693,
+    "sha256": "7fb9b1a8f9d368bdcd6b14da92fa3658fe8449b3232ebecb7290a53c697e7cb0"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/styles.css",
+    "status": 200,
+    "bytes": 22420,
+    "sha256": "6360a22215d0487ea575d2393a2e69482c1447c589210e585e337ba9e9a042ab"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/v2.css",
+    "status": 200,
+    "bytes": 32849,
+    "sha256": "6938ffccca8884ff1f1e97fb2c5520566c554791a22d8912ebf5e2650d1193a7"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/assets/creed-story-apostles.svg",
+    "status": 200,
+    "bytes": 5254,
+    "sha256": "3c30fdc5f7ab49b903458dbfef4804db8a8d1ebaeac712e461a0272e4ece4d29"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/assets/creed-story-nicene.svg",
+    "status": 200,
+    "bytes": 4586,
+    "sha256": "a62d1301dc216cd6cd90c88353f7d522afa5876259d30213f5edc44fa8a771b6"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/assets/creed-story-athanasian.svg",
+    "status": 200,
+    "bytes": 3689,
+    "sha256": "b4521bd7b55cc5aa68b703e3887affc91767265d69145b666da83a6cc5be839f"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/text-verification.json",
+    "status": 200,
+    "bytes": 79435,
+    "sha256": "7e7b0d6147f0013f203b2547c5c29304acadb091c6ff132e3376e43c1c608cda"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/source-audit.md",
+    "status": 200,
+    "bytes": 6880,
+    "sha256": "c664db6b66cb370625c55900849b02d0ca7ea2c2b7ba682a901fa4ba4759f703"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/text-comparison.md",
+    "status": 200,
+    "bytes": 5768,
+    "sha256": "1717907b212a3f6c26288f5eae3ed59925c540b2b412c7738b4b99461500b983"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.netlify.app/favicon.svg",
+    "status": 200,
+    "bytes": 269,
+    "sha256": "c86ddd3e5d241ec7c0dff41b63989c12fd6188921a2cf7bc9f3971afa44f7e29"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/",
+    "status": 200,
+    "bytes": 235895,
+    "sha256": "c2c820fba1f09ed1508ba3a69e4aead60fe84e3cf3cd528ba2a17ea36fc16d36",
+    "v2": true
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/library.html",
+    "status": 200,
+    "bytes": 319772,
+    "sha256": "9c188882eed48cc0c65965bf6cff38ee2178cc5e4266bb74118cba9611c8c47c"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/background.html",
+    "status": 200,
+    "bytes": 24018,
+    "sha256": "cccf3df911cf1e02611c3d3444c24c306a10cae6de129b66eb5a9bb280434d8b"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/reader-apostles.html",
+    "status": 200,
+    "bytes": 1576,
+    "sha256": "73c8ff80a3ce07a03211a3baaecaa34c2bdfad231fcf3b34160315dcc7208711"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/reader-nicene.html",
+    "status": 200,
+    "bytes": 2049,
+    "sha256": "74587aa4707143077a647204db9a5ae5992c88e886cbf8d61d3b98ae52e9b12b"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/reader-athanasian.html",
+    "status": 200,
+    "bytes": 4027,
+    "sha256": "a88cae9302c7c740d8663f09461f398df8cabe4d63b59810298e7407a9e6a2ae"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/app.js",
+    "status": 200,
+    "bytes": 19024,
+    "sha256": "74f34b4b224b586752cb151676b36f8e5ab1c687e3f0946fe23332617de173ff"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/v2.js",
+    "status": 200,
+    "bytes": 4693,
+    "sha256": "7fb9b1a8f9d368bdcd6b14da92fa3658fe8449b3232ebecb7290a53c697e7cb0"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/styles.css",
+    "status": 200,
+    "bytes": 22420,
+    "sha256": "6360a22215d0487ea575d2393a2e69482c1447c589210e585e337ba9e9a042ab"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/v2.css",
+    "status": 200,
+    "bytes": 32849,
+    "sha256": "6938ffccca8884ff1f1e97fb2c5520566c554791a22d8912ebf5e2650d1193a7"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/assets/creed-story-apostles.svg",
+    "status": 200,
+    "bytes": 5254,
+    "sha256": "3c30fdc5f7ab49b903458dbfef4804db8a8d1ebaeac712e461a0272e4ece4d29"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/assets/creed-story-nicene.svg",
+    "status": 200,
+    "bytes": 4586,
+    "sha256": "a62d1301dc216cd6cd90c88353f7d522afa5876259d30213f5edc44fa8a771b6"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/assets/creed-story-athanasian.svg",
+    "status": 200,
+    "bytes": 3689,
+    "sha256": "b4521bd7b55cc5aa68b703e3887affc91767265d69145b666da83a6cc5be839f"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/text-verification.json",
+    "status": 200,
+    "bytes": 79435,
+    "sha256": "7e7b0d6147f0013f203b2547c5c29304acadb091c6ff132e3376e43c1c608cda"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/source-audit.md",
+    "status": 200,
+    "bytes": 6880,
+    "sha256": "c664db6b66cb370625c55900849b02d0ca7ea2c2b7ba682a901fa4ba4759f703"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/text-comparison.md",
+    "status": 200,
+    "bytes": 5768,
+    "sha256": "1717907b212a3f6c26288f5eae3ed59925c540b2b412c7738b4b99461500b983"
+  },
+  {
+    "url": "https://three-creeds-20261017-v2-gtstudy.surge.sh/favicon.svg",
+    "status": 200,
+    "bytes": 269,
+    "sha256": "c86ddd3e5d241ec7c0dff41b63989c12fd6188921a2cf7bc9f3971afa44f7e29"
+  }
+]

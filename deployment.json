@@ -4,8 +4,21 @@
   "githubPagesUrl": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/",
   "surgeUrl": "https://three-creeds-20261017-v2-gtstudy.surge.sh/",
   "repository": "https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-20261017-v2-GTstudy",
-  "verified": null,
-  "sourceCommit": null,
+  "verified": "2026-10-17",
+  "sourceCommit": "2cf1bed2285e2c6236c05108f4694bb90a867584",
   "version": "2.0.0",
-  "repositoryId": 1423064988
+  "repositoryId": 1423064988,
+  "workflowRuns": {
+    "pages": 39043699326,
+    "netlifyAndSurge": 39043699430
+  },
+  "publicChecks": {
+    "resourcesPerHost": 17,
+    "hosts": 3,
+    "allHttp200": true,
+    "originalSectionsPerHost": 232,
+    "originalMismatches": 0,
+    "onlineVersionToggle": true,
+    "onlineChristologyToggle": true
+  }
 }

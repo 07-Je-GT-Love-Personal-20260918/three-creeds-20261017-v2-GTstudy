@@ -1,0 +1,23 @@
+{
+  "hosts": [
+    {
+      "base": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-20261017-v2-GTstudy/",
+      "total": 232,
+      "mismatches": []
+    },
+    {
+      "base": "https://three-creeds-20261017-v2-gtstudy.netlify.app/",
+      "total": 232,
+      "mismatches": []
+    },
+    {
+      "base": "https://three-creeds-20261017-v2-gtstudy.surge.sh/",
+      "total": 232,
+      "mismatches": []
+    }
+  ],
+  "onlineInteractions": {
+    "versionToggle": true,
+    "christToggle": true
+  }
+}
