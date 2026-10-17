@@ -1,0 +1,157 @@
+{
+  "checked": "2026-10-17T15:04:07.523Z",
+  "viewports": [
+    {
+      "name": "wide",
+      "width": 1920,
+      "pageWidth": 1920,
+      "bodyFont": "22px",
+      "originalFont": "24px",
+      "referenceFont": "17px",
+      "headerOverlap": false,
+      "brokenImages": [],
+      "mainOrder": [
+        "panorama",
+        "apostles",
+        "nicene",
+        "athanasian",
+        "comparison"
+      ],
+      "unresolved": false
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "pageWidth": 1440,
+      "bodyFont": "22px",
+      "originalFont": "24px",
+      "referenceFont": "17px",
+      "headerOverlap": false,
+      "brokenImages": [],
+      "mainOrder": [
+        "panorama",
+        "apostles",
+        "nicene",
+        "athanasian",
+        "comparison"
+      ],
+      "unresolved": false
+    },
+    {
+      "name": "tablet",
+      "width": 820,
+      "pageWidth": 820,
+      "bodyFont": "22px",
+      "originalFont": "24px",
+      "referenceFont": "17px",
+      "headerOverlap": false,
+      "brokenImages": [],
+      "mainOrder": [
+        "panorama",
+        "apostles",
+        "nicene",
+        "athanasian",
+        "comparison"
+      ],
+      "unresolved": false
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "pageWidth": 390,
+      "bodyFont": "22px",
+      "originalFont": "22px",
+      "referenceFont": "17px",
+      "headerOverlap": false,
+      "brokenImages": [],
+      "mainOrder": [
+        "panorama",
+        "apostles",
+        "nicene",
+        "athanasian",
+        "comparison"
+      ],
+      "unresolved": false
+    },
+    {
+      "name": "small",
+      "width": 320,
+      "pageWidth": 320,
+      "bodyFont": "22px",
+      "originalFont": "22px",
+      "referenceFont": "17px",
+      "headerOverlap": false,
+      "brokenImages": [],
+      "mainOrder": [
+        "panorama",
+        "apostles",
+        "nicene",
+        "athanasian",
+        "comparison"
+      ],
+      "unresolved": false
+    }
+  ],
+  "extraPages": [
+    {
+      "url": "background.html",
+      "width": 390,
+      "pageWidth": 390
+    },
+    {
+      "url": "background.html",
+      "width": 320,
+      "pageWidth": 320
+    },
+    {
+      "url": "library.html",
+      "width": 390,
+      "pageWidth": 390
+    },
+    {
+      "url": "library.html",
+      "width": 320,
+      "pageWidth": 320
+    },
+    {
+      "url": "reader-apostles.html",
+      "width": 390,
+      "pageWidth": 390
+    },
+    {
+      "url": "reader-apostles.html",
+      "width": 320,
+      "pageWidth": 320
+    },
+    {
+      "url": "reader-nicene.html",
+      "width": 390,
+      "pageWidth": 390
+    },
+    {
+      "url": "reader-nicene.html",
+      "width": 320,
+      "pageWidth": 320
+    },
+    {
+      "url": "reader-athanasian.html",
+      "width": 390,
+      "pageWidth": 390
+    },
+    {
+      "url": "reader-athanasian.html",
+      "width": 320,
+      "pageWidth": 320
+    }
+  ],
+  "interactions": [
+    "descent/ascent diagram",
+    "325/381 version diagram",
+    "Trinity/Christology terms",
+    "history sequential highlight",
+    "reading scale",
+    "motion pause"
+  ],
+  "errors": [],
+  "failures": []
+}

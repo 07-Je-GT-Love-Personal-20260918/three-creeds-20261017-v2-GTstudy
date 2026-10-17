@@ -3,11 +3,17 @@ from pathlib import Path
 from html import escape
 import json, re, shutil, hashlib
 from html.parser import HTMLParser
+from edition_v2 import guide,hub,synthesis,supporting_page,icon
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
 CONTENT = ROOT / 'content'
 fw = json.loads((CONTENT/'framework.json').read_text(encoding='utf-8'))
+fw['timeline']=fw['timeline'][:15]
+fw['places']=fw['places'][:7]+[
+ {'name':'阿奎莱亚／Aquileia','lat':45.77,'lon':13.368,'body':'鲁非努的受洗宣认与解释见证了西方信仰表达在地域之间的差异，帮助我们理解使徒信经逐步定型的过程。','culture':'意大利东北的拉丁教会处于东西交流的交通网络中。地方受洗宣认具有共同骨架，也存在具体词句差异。'},
+ {'name':'以弗所／Ephesus','lat':37.941,'lon':27.341,'body':'431年会议的争论围绕道成肉身者的位格统一。它帮助说明：马利亚所生的是神的儿子成为人，不是她创造了神性。','culture':'小亚细亚的希腊语城市；基督论争论发生在释经、敬拜称谓、主教关系与帝国政治交织的教会生活中。'},
+ {'name':'托莱多／Toledo','lat':39.858,'lon':-4.024,'body':'589年第三次托莱多会议处于西哥特王国由亚流传统转向尼西亚信仰的背景，是“和子”条款在西方传播的重要节点。','culture':'伊比利亚的拉丁教会与王国宗教转向密切相关；西方礼仪传播史不能直接等同381年东方希腊文本。'}]
 comm = json.loads((CONTENT/'commentary.json').read_text(encoding='utf-8'))
 full_path=CONTENT/'fulltexts.json'
 full=json.loads(full_path.read_text(encoding='utf-8')) if full_path.exists() else {'documents':[]}
@@ -25,6 +31,14 @@ def ref_links(s):
             output.append(f'<a href="{CONF[key]}" target="_blank" rel="noopener">{E(chunk)}</a>')
         else: output.append(E(chunk))
     return '；'.join(output)
+
+def emphasize(text):
+    count=0
+    def wrap(match):
+        nonlocal count
+        count+=1
+        return '<mark class="theology-key">'+match.group()+'</mark>' if count<=3 else match.group()
+    return re.sub(r'同一位永恒的子|一体三位|一位二性|位格区别|位格联合|完整人性|完全神性|同具神性|身体复活|基督的义|信心的果子|三一神|受生|称义',wrap,E(text))
 
 class SafeHTML(HTMLParser):
     allowed={'p','div','article','ol','ul','li','sup','sub','strong','em','b','i','br','h2','h3','h4','h5','h6','span','blockquote'}
@@ -59,25 +73,27 @@ def timeline():
     return ''.join(output)
 
 CREEDS = {
- 'apostles':('06','APOSTLES’ CREED','使徒信经','十二条，沿着救恩故事认识神。','从西方受洗宣认逐渐形成，内容具有使徒性；不能据此认定十二使徒一人写一句。本文按常用十二条教学结构展开，与海德堡问答23–58的安排相互参照。','apostles-creed','故事骨架 · 12条'),
- 'nicene':('07','NICENE CREED','尼西亚信经','不止问发生什么，更问救主是谁。','本文解读指定网站采用的西方通行形式，以381年尼西亚—君士坦丁堡信经为基础，并含后来西方的“和子”条款。325版、381版与西方增补有不同历史层次；以下14段为教学分段，不冒充古代统一条号。','nicene-creed','身份澄清 · 14段'),
- 'athanasian':('08','ATHANASIAN CREED','亚他那修信经','一体三位，一位二性。','作者不详，形成于后来的拉丁西方，不是亚他那修亲笔。指定网页正文有42段，而引言段号存在不一致；以下12组逐一覆盖正文1–42段。传统称“普世信经”，不代表东正教同样把它作为普世会议文件接纳。','athanasian-creed','教义边界 · 42段 / 12组')
+ 'apostles':('02','APOSTLES’ CREED','使徒信经','十二条，沿着救恩故事认识神。','从西方受洗宣认逐渐形成，内容具有使徒性；不能据此认定十二使徒一人写一句。本文按常用十二条教学结构展开，与海德堡问答23–58的安排相互参照。','apostles-creed','故事骨架 · 12条'),
+ 'nicene':('03','NICENE CREED','尼西亚信经','不止问发生什么，更问救主是谁。','本文解读指定网站采用的西方通行形式，以381年尼西亚—君士坦丁堡信经为基础，并含后来西方的“和子”条款。325版、381版与西方增补有不同历史层次；以下14段为教学分段，不冒充古代统一条号。','nicene-creed','身份澄清 · 14段'),
+ 'athanasian':('04','ATHANASIAN CREED','亚他那修信经','一体三位，一位二性。','作者不详，形成于后来的拉丁西方，不是亚他那修亲笔。指定网页正文有42段，而引言段号存在不一致；以下12组逐一覆盖正文1–42段。传统称“普世信经”，不代表东正教同样把它作为普世会议文件接纳。','athanasian-creed','教义边界 · 42段 / 12组')
 }
 
 def creeds():
     output=[]
     for key,(num,en,name,title,intro,path,tag) in CREEDS.items():
-        output.append(f'<section class="chapter" id="{key}"><div class="section-head"><div><div class="eyebrow"><span class="section-num">{num}</span> {en}</div><h2>{name} · 深度解读</h2></div><p>{title}</p></div><div class="creed-intro"><div class="biglabel">{E(tag)}</div><h3 style="margin-top:12px">{title}</h3><p>{intro}</p><a href="{CCI}creeds/{path}" target="_blank" rel="noopener">打开指定网站中文全文 ↗</a><span class="small">　原文区与原创解读区分别标识。</span></div><div class="clauses">')
+        output.append(f'<section class="chapter creed-section theme-{key}" id="{key}"><div class="section-head"><div><div class="eyebrow"><span class="section-num">{num}</span> {en}</div><h2>{name} · 深度解读</h2></div><p>{title}</p></div><div class="creed-intro"><div class="biglabel">{E(tag)}</div><h3 style="margin-top:12px">{title}</h3><p>{intro}</p><a href="{CCI}creeds/{path}" target="_blank" rel="noopener">打开指定网站中文全文 ↗</a><span class="small">　原文区与原创解读区分别标识。</span></div><div class="clauses">')
+        output.append(f'<nav class="creed-chapter-nav" aria-label="{name}章内导航"><a href="#original-{key}">{icon("book")}完整原文</a><a href="#{comm[key][0]["id"]}">{icon("scroll")}逐条解读</a><a href="#lab-{key}">{icon("layers")}互动图解</a><a href="reader-{key}.html">{icon("target")}纯净阅读</a></nav>')
+        output.append(guide(ROOT,key))
         if key in docs:
             sec=docs[key]['sections'][0]
-            output.append(f'<div class="original-panel"><div class="reader-title"><span class="tag gold">指定网站中文原文 · 完整阅读</span><h3>{name}</h3><a class="small" href="reader-{key}.html">打开独立清洁阅读版 ↗</a></div><div class="original-body">{safe_original(sec)}</div><div class="original-meta">来源：<a href="{E(sec["source"])}" target="_blank" rel="noopener">ccifellowship.org</a> · 正文字词及标点保留；段落样式重新排版。<br>以下开始原创解读。</div></div>')
+            output.append(f'<div class="original-panel" id="original-{key}"><div class="reader-title"><span class="tag gold">指定网站中文原文 · 完整阅读</span><h3>{name}</h3><a class="small" href="reader-{key}.html">打开独立清洁阅读版 ↗</a></div><div class="original-body">{safe_original(sec)}</div><div class="original-meta">来源：<a href="{E(sec["source"])}" target="_blank" rel="noopener">ccifellowship.org</a> · 正文字词及标点保留；段落样式重新排版。<br>以下开始原创解读。</div></div>')
         for i,x in enumerate(comm[key]):
-            output.append(f'<article class="clause" id="{E(x["id"])}"><div class="clause-head"><span class="clause-number">{i+1:02}</span><div><span class="tag">{E(x["range"])}</span><h3>{E(x["title"])}</h3></div></div><div class="clause-body"><p>{E(x["explanation"])}</p><div class="clause-bottom"><div><b>◈ 圣约联结</b>{E(x["covenant"])}</div><div><b>△ 误区辨析</b>{E(x["error"])}</div><div><b>↗ 生活应用</b>{E(x["application"])}</div></div><div class="refs"><span>经文：{E(x["bible"])}</span><span>认信：{ref_links(x["confessions"])}</span></div></div></article>')
+            output.append(f'<article class="clause theme-{key}" id="{E(x["id"])}"><div class="clause-head"><span class="clause-number">{i+1:02}</span><div><span class="tag">{E(x["range"])}</span><h3>{E(x["title"])}</h3></div></div><div class="clause-body"><p>{emphasize(x["explanation"])}</p><div class="clause-bottom"><div><b>{icon("layers")} 圣约联结</b>{E(x["covenant"])}</div><div><b>{icon("shield")} 误区辨析</b>{E(x["error"])}</div><div><b>{icon("target")} 生活应用</b>{E(x["application"])}</div></div><div class="refs"><span>经文：{E(x["bible"])}</span><span>认信：{ref_links(x["confessions"])}</span></div></div></article>')
         output.append('</div></section>')
     return ''.join(output)
 
 def comparison():
-    return ''.join('<tr>'+''.join(f'<td>{E(x[k])}</td>' for k in ['aspect','apostles','nicene','athanasian'])+'</tr>' for x in fw['comparison'])
+    return ''.join('<tr>'+''.join(f'<td data-label="{label}">{E(x[k])}</td>' for k,label in [('aspect','比较维度'),('apostles','使徒信经'),('nicene','尼西亚信经'),('athanasian','亚他那修信经')])+'</tr>' for x in fw['comparison'])
 
 def difficulties():
     return ''.join(f'<article class="difficulty" id="faq-{i+1}"><h3><span class="tag gold">{i+1:02}</span> {E(x["question"])}</h3><p>{E(x["answer"])}</p><div class="bib">经文：{E(x["bible"])}<br>认信：{ref_links(x["confessions"])}</div></article>' for i,x in enumerate(fw['difficulties']))
@@ -108,12 +124,12 @@ def map_svg():
     for i,p in enumerate(fw['places']):
         x,y=xy(p['lon'],p['lat']);dx,dy=offsets.get(i,(0,0));tx,ty=x+dx,y+dy
         if dx or dy:parts.append(f'<path d="M{x:.1f},{y:.1f}L{tx:.1f},{ty:.1f}" stroke="#58715e" stroke-width="1"/><circle cx="{x:.1f}" cy="{y:.1f}" r="2.8" fill="#174e42"/>')
-        parts.append(f'<g class="marker" data-place="{i}" tabindex="0" role="button" aria-label="{E(p["name"])}"><circle cx="{tx:.1f}" cy="{ty:.1f}" r="11"/><text x="{tx:.1f}" y="{ty+3.5:.1f}" text-anchor="middle">{i+1}</text></g>')
+        parts.append(f'<g class="marker" data-place="{i}" tabindex="0" role="button" aria-label="{E(p["name"])}"><circle cx="{tx:.1f}" cy="{ty:.1f}" r="11"/><text x="{tx:.1f}" y="{ty+7:.1f}" text-anchor="middle">{i+1}</text></g>')
     parts.append('</g></svg>')
     return ''.join(parts)
 
 def toc():
-    sections=[('start','00 阅读方法'),('panorama','01 整本圣经全景'),('covenant','02 圣约与相交'),('history','03 历史时间线'),('geography','04 地理与文化'),('comparison','05 三经深度比较'),('apostles','06 使徒信经 · 12条'),('nicene','07 尼西亚信经 · 14段'),('athanasian','08 亚他那修信经 · 42段'),('union','09 三项联合信条'),('difficulties','10 核心难点'),('memorize','11 阅读与记忆工坊'),('application','12 信仰的生活应用'),('sources','13 来源与版本说明')]
+    sections=[('panorama','01 先看圣经全景'),('apostles','02 使徒信经 · 12条'),('nicene','03 尼西亚信经 · 14段'),('athanasian','04 亚他那修信经 · 42段'),('comparison','05 三经深度比较'),('history','06 三经历史时间线'),('geography','07 地理与文化'),('difficulties','08 核心难点'),('memorize','09 原文与记忆工坊'),('support','10 辅助阅读'),('sources','11 来源与版本')]
     output=[]
     for sid,label in sections:
         output.append(f'<a href="#{sid}">{label}</a>')
@@ -140,7 +156,7 @@ def sources():
     return ''.join(output)
 
 html=(ROOT/'template.html').read_text(encoding='utf-8')
-slots={'TOC':toc(),'OVERVIEW':overview(),'TIMELINE':timeline(),'MAP':map_svg(),'COMPARISON':comparison(),'CREEDS':creeds(),'DIFFICULTIES':difficulties(),'SOURCES':sources(),'REPO':'https://github.com/07-Je-GT-Love-Personal-20260918/reformed-three-creeds-20261017-v1','DATA':json.dumps({'places':fw['places'],'originals':{k:docs[k]['sections'][0]['text'] for k in CREEDS if k in docs}},ensure_ascii=False).replace('</','<\/')}
+slots={'TOC':toc(),'HUB':hub(),'MATRIX':synthesis(),'OVERVIEW':overview(),'TIMELINE':timeline(),'MAP':map_svg(),'COMPARISON':comparison(),'CREEDS':creeds(),'DIFFICULTIES':difficulties(),'SOURCES':sources(),'REPO':'https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-20261017-v2-GTstudy','DATA':json.dumps({'places':fw['places'],'originals':{k:docs[k]['sections'][0]['text'] for k in CREEDS if k in docs}},ensure_ascii=False).replace('</','<\/')}
 for key,value in slots.items():html=html.replace('@@'+key+'@@',value)
 assert not re.search(r'@@[A-Z]+@@',html),'Unresolved template slots'
 ids=re.findall(r'\bid="([^"]+)"',html)
@@ -148,6 +164,7 @@ assert len(ids)==len(set(ids)),'Duplicate IDs'
 for anchor in re.findall(r'href="#([^"]+)"',html):assert anchor in ids,anchor
 assert [len(comm[k]) for k in CREEDS]==[12,14,12]
 OUT.mkdir(exist_ok=True)
+supporting_page(ROOT,fw,slots)
 (OUT/'index.html').write_text(html,encoding='utf-8')
 (OUT/'.nojekyll').write_text('',encoding='utf-8')
 shutil.copyfile(CONTENT/'cci-source-audit.md',OUT/'source-audit.md')

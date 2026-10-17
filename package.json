@@ -1,7 +1,10 @@
 {
-  "name": "reformed-three-creeds-20261017-v1",
-  "version": "1.0.0",
+  "name": "three-creeds-20261017-v2-gtstudy",
+  "version": "2.0.0",
   "private": true,
   "description": "三大信经：圣经、历史与欧陆改革宗深读",
-  "scripts": {"build": "python build.py", "preview": "python -m http.server 4173 -d dist"}
+  "scripts": {
+    "build": "python build.py",
+    "preview": "python -m http.server 4173 -d dist"
+  }
 }

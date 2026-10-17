@@ -1,0 +1,6 @@
+{
+  "sourceDataUnchanged": true,
+  "documents": 6,
+  "sections": 232,
+  "verification": "JSON结构及全部正文/安全HTML/来源/摘要字段与v1逐字相同；文件系统布局换行不作为正文差异"
+}

@@ -34,6 +34,6 @@ jobs:
           node-version: '22'
       - run: python build.py
       - name: Publish Surge
-        run: npx --yes surge@0.44.6 ./dist reformed-three-creeds-20261017-v1.surge.sh
+        run: npx --yes surge@0.44.6 ./dist three-creeds-20261017-v2-gtstudy.surge.sh
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}

@@ -5,8 +5,7 @@ const saved={get(k,d=null){try{return JSON.parse(localStorage.getItem('creeds-v1
 function toast(t){$('#toast').textContent=t;$('#toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').hidden=true,3500)}
 if(saved.get('night',false))document.body.classList.add('night');
 $('#theme-toggle').addEventListener('click',()=>{saved.set('night',document.body.classList.toggle('night'));$('#theme-toggle').setAttribute('aria-pressed',document.body.classList.contains('night'))});
-let largeFont=saved.get('largeFont',false);if(largeFont)document.documentElement.style.setProperty('--font','19px');
-$('#font-toggle').addEventListener('click',()=>{largeFont=!largeFont;document.documentElement.style.setProperty('--font',largeFont?'19px':'17px');saved.set('largeFont',largeFont);toast(largeFont?'已切换为大字号':'已恢复标准字号')});
+// GTstudy v2 manages the complete reading scale in v2.js.
 function setToc(open){if(matchMedia('(max-width:960px)').matches){document.body.classList.toggle('toc-mobile-open',open);if(open)$('#toc-close').focus()}else document.body.classList.toggle('toc-hidden',!open);$('#toc-toggle').setAttribute('aria-expanded',open)}
 $('#toc-toggle').addEventListener('click',()=>setToc(matchMedia('(max-width:960px)').matches?!document.body.classList.contains('toc-mobile-open'):document.body.classList.contains('toc-hidden')));
 function closeMobile(){document.body.classList.remove('toc-mobile-open');if(matchMedia('(max-width:960px)').matches)$('#toc-toggle').setAttribute('aria-expanded','false')}
