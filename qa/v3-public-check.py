@@ -23,7 +23,7 @@ results=[];failures=[];sourcechecks=[]
 with ThreadPoolExecutor(max_workers=6) as pool:
  for host,file,r in pool.map(get,[(h,f) for h in hosts for f in files]):
   item={'url':host+file,'http':r.status_code,'bytes':len(r.content),'sha256':hashlib.sha256(r.content).hexdigest()}
-  if file.endswith(('.js','.css','.svg')):
+  if file.endswith(('.html','.js','.css','.svg')):
    canonical=lambda text:text.replace('\r\n','\n').rstrip()
    item['sameAsLocal']=canonical(r.text)==canonical((ROOT/'dist'/file).read_text(encoding='utf-8'))
    if not item['sameAsLocal']:failures.append(item['url']+' stale asset')

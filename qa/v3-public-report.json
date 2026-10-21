@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-21T03:48:59.461824+00:00",
+  "checked": "2026-10-21T03:53:05.229152+00:00",
   "unauthenticated": true,
   "hosts": 2,
   "resourcesPerHost": 18,
@@ -8,40 +8,46 @@
       "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/index.html",
       "http": 200,
       "bytes": 290086,
-      "sha256": "c90f7c8c188e9f421062cc923be358e089f2ae2b0ca21d38d421f5cb0700ffbf",
+      "sha256": "d851f9eb4eaddceca6f3f4bedfd7d2e3a6c4de3399d78f4fb62f1cdff1e7ed5b",
       "coreNotes": 38,
       "themes": 4,
-      "v3": true
+      "v3": true,
+      "sameAsLocal": true
     },
     {
       "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/library.html",
       "http": 200,
       "bytes": 324767,
-      "sha256": "df904919e947e648fbe839825460f64455a1fd8e95c29a614094041bcd4b1583"
+      "sha256": "df904919e947e648fbe839825460f64455a1fd8e95c29a614094041bcd4b1583",
+      "sameAsLocal": true
     },
     {
       "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/background.html",
       "http": 200,
       "bytes": 29013,
-      "sha256": "320e21ab421590c79a7b7cb03759955e34060790f20114ffc5da2101172ff5d5"
+      "sha256": "320e21ab421590c79a7b7cb03759955e34060790f20114ffc5da2101172ff5d5",
+      "sameAsLocal": true
     },
     {
       "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/reader-apostles.html",
       "http": 200,
       "bytes": 6571,
-      "sha256": "f842151fbc43b76082a5700cedcf40464d24a4024fa82fe7b078db93e5610b32"
+      "sha256": "f842151fbc43b76082a5700cedcf40464d24a4024fa82fe7b078db93e5610b32",
+      "sameAsLocal": true
     },
     {
       "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/reader-nicene.html",
       "http": 200,
       "bytes": 7044,
-      "sha256": "b981a07d364fe45090881914c25ed4a3d4f12847fdd336795910a32b9a4c6e56"
+      "sha256": "b981a07d364fe45090881914c25ed4a3d4f12847fdd336795910a32b9a4c6e56",
+      "sameAsLocal": true
     },
     {
       "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/reader-athanasian.html",
       "http": 200,
       "bytes": 9022,
-      "sha256": "87198010f763568744e4434b44389b525861228e532cfb5395efba5a59fe645a"
+      "sha256": "87198010f763568744e4434b44389b525861228e532cfb5395efba5a59fe645a",
+      "sameAsLocal": true
     },
     {
       "url": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/styles.css",
@@ -130,40 +136,46 @@
       "url": "https://three-creeds-20261021-v3-gtstudy.surge.sh/index.html",
       "http": 200,
       "bytes": 290086,
-      "sha256": "c90f7c8c188e9f421062cc923be358e089f2ae2b0ca21d38d421f5cb0700ffbf",
+      "sha256": "d851f9eb4eaddceca6f3f4bedfd7d2e3a6c4de3399d78f4fb62f1cdff1e7ed5b",
       "coreNotes": 38,
       "themes": 4,
-      "v3": true
+      "v3": true,
+      "sameAsLocal": true
     },
     {
       "url": "https://three-creeds-20261021-v3-gtstudy.surge.sh/library.html",
       "http": 200,
       "bytes": 324767,
-      "sha256": "df904919e947e648fbe839825460f64455a1fd8e95c29a614094041bcd4b1583"
+      "sha256": "df904919e947e648fbe839825460f64455a1fd8e95c29a614094041bcd4b1583",
+      "sameAsLocal": true
     },
     {
       "url": "https://three-creeds-20261021-v3-gtstudy.surge.sh/background.html",
       "http": 200,
       "bytes": 29013,
-      "sha256": "320e21ab421590c79a7b7cb03759955e34060790f20114ffc5da2101172ff5d5"
+      "sha256": "320e21ab421590c79a7b7cb03759955e34060790f20114ffc5da2101172ff5d5",
+      "sameAsLocal": true
     },
     {
       "url": "https://three-creeds-20261021-v3-gtstudy.surge.sh/reader-apostles.html",
       "http": 200,
       "bytes": 6571,
-      "sha256": "f842151fbc43b76082a5700cedcf40464d24a4024fa82fe7b078db93e5610b32"
+      "sha256": "f842151fbc43b76082a5700cedcf40464d24a4024fa82fe7b078db93e5610b32",
+      "sameAsLocal": true
     },
     {
       "url": "https://three-creeds-20261021-v3-gtstudy.surge.sh/reader-nicene.html",
       "http": 200,
       "bytes": 7044,
-      "sha256": "b981a07d364fe45090881914c25ed4a3d4f12847fdd336795910a32b9a4c6e56"
+      "sha256": "b981a07d364fe45090881914c25ed4a3d4f12847fdd336795910a32b9a4c6e56",
+      "sameAsLocal": true
     },
     {
       "url": "https://three-creeds-20261021-v3-gtstudy.surge.sh/reader-athanasian.html",
       "http": 200,
       "bytes": 9022,
-      "sha256": "87198010f763568744e4434b44389b525861228e532cfb5395efba5a59fe645a"
+      "sha256": "87198010f763568744e4434b44389b525861228e532cfb5395efba5a59fe645a",
+      "sameAsLocal": true
     },
     {
       "url": "https://three-creeds-20261021-v3-gtstudy.surge.sh/styles.css",

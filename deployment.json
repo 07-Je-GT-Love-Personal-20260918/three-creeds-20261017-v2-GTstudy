@@ -16,11 +16,11 @@
     "sections": 232,
     "mismatches": 0
   },
-  "sourceCommit": "b8e3f7e5273dcd03f5d916d73a8afa8ff083f865",
+  "sourceCommit": "438871ca1e868846d91212a48a84ead86fe99826",
   "verified": "2026-10-21",
   "workflowRuns": {
-    "pages": 39540197667,
-    "surge": 39540197642
+    "pages": 39540869984,
+    "surge": 39540870145
   },
   "publicChecks": {
     "hosts": 2,
@@ -29,6 +29,9 @@
     "originalSectionsPerHost": 232,
     "originalMismatches": 0,
     "coreNotes": 38,
-    "themeChoices": 4
+    "themeChoices": 4,
+    "publicHTMLMatchesLocal": true,
+    "largeType320px": true,
+    "reducedMotion": true
   }
 }
