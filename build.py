@@ -4,6 +4,7 @@ from html import escape
 import json, re, shutil, hashlib
 from html.parser import HTMLParser
 from edition_v2 import guide,hub,synthesis,supporting_page,icon
+from edition_v3 import core_note,essentials,enhance_pages
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
@@ -88,7 +89,7 @@ def creeds():
             sec=docs[key]['sections'][0]
             output.append(f'<div class="original-panel" id="original-{key}"><div class="reader-title"><span class="tag gold">指定网站中文原文 · 完整阅读</span><h3>{name}</h3><a class="small" href="reader-{key}.html">打开独立清洁阅读版 ↗</a></div><div class="original-body">{safe_original(sec)}</div><div class="original-meta">来源：<a href="{E(sec["source"])}" target="_blank" rel="noopener">ccifellowship.org</a> · 正文字词及标点保留；段落样式重新排版。<br>以下开始原创解读。</div></div>')
         for i,x in enumerate(comm[key]):
-            output.append(f'<article class="clause theme-{key}" id="{E(x["id"])}"><div class="clause-head"><span class="clause-number">{i+1:02}</span><div><span class="tag">{E(x["range"])}</span><h3>{E(x["title"])}</h3></div></div><div class="clause-body"><p>{emphasize(x["explanation"])}</p><div class="clause-bottom"><div><b>{icon("layers")} 圣约联结</b>{E(x["covenant"])}</div><div><b>{icon("shield")} 误区辨析</b>{E(x["error"])}</div><div><b>{icon("target")} 生活应用</b>{E(x["application"])}</div></div><div class="refs"><span>经文：{E(x["bible"])}</span><span>认信：{ref_links(x["confessions"])}</span></div></div></article>')
+            output.append(f'<article class="clause theme-{key}" id="{E(x["id"])}"><div class="clause-head"><span class="clause-number">{i+1:02}</span><div><span class="tag">{E(x["range"])}</span><h3>{E(x["title"])}</h3></div></div><div class="clause-body">{core_note(ROOT,x["id"])}<p>{emphasize(x["explanation"])}</p><div class="clause-bottom"><div><b>{icon("layers")} 圣约联结</b>{E(x["covenant"])}</div><div><b>{icon("shield")} 误区辨析</b>{E(x["error"])}</div><div><b>{icon("target")} 生活应用</b>{E(x["application"])}</div></div><div class="refs"><span>经文：{E(x["bible"])}</span><span>认信：{ref_links(x["confessions"])}</span></div></div></article>')
         output.append('</div></section>')
     return ''.join(output)
 
@@ -156,7 +157,7 @@ def sources():
     return ''.join(output)
 
 html=(ROOT/'template.html').read_text(encoding='utf-8')
-slots={'TOC':toc(),'HUB':hub(),'MATRIX':synthesis(),'OVERVIEW':overview(),'TIMELINE':timeline(),'MAP':map_svg(),'COMPARISON':comparison(),'CREEDS':creeds(),'DIFFICULTIES':difficulties(),'SOURCES':sources(),'REPO':'https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-20261017-v2-GTstudy','DATA':json.dumps({'places':fw['places'],'originals':{k:docs[k]['sections'][0]['text'] for k in CREEDS if k in docs}},ensure_ascii=False).replace('</','<\/')}
+slots={'ESSENTIALS':essentials(ROOT,docs),'TOC':toc(),'HUB':hub(),'MATRIX':synthesis(),'OVERVIEW':overview(),'TIMELINE':timeline(),'MAP':map_svg(),'COMPARISON':comparison(),'CREEDS':creeds(),'DIFFICULTIES':difficulties(),'SOURCES':sources(),'REPO':'https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy','DATA':json.dumps({'places':fw['places'],'originals':{k:docs[k]['sections'][0]['text'] for k in CREEDS if k in docs}},ensure_ascii=False).replace('</','<\/')}
 for key,value in slots.items():html=html.replace('@@'+key+'@@',value)
 assert not re.search(r'@@[A-Z]+@@',html),'Unresolved template slots'
 ids=re.findall(r'\bid="([^"]+)"',html)
@@ -172,4 +173,5 @@ if (CONTENT/'text-comparison.md').exists():shutil.copyfile(CONTENT/'text-compari
 if docs:
     from library import build_library
     build_library(ROOT,docs,safe_original)
+enhance_pages(ROOT)
 print(f'Built {len(html):,} characters; 38 commentary units; {len(ids)} unique anchors.')

@@ -1,0 +1,1 @@
+(()=>{const d=document.documentElement;try{const p=localStorage.getItem('gtstudy-v3-palette');d.dataset.palette=['forest','ocean','violet','amber'].includes(p)?p:'forest';d.dataset.scheme=JSON.parse(localStorage.getItem('creeds-v1-night')||'false')?'dark':'light'}catch{d.dataset.palette='forest';d.dataset.scheme='light'}})();

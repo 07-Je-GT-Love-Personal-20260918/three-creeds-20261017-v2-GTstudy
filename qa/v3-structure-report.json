@@ -1,0 +1,33 @@
+{
+  "pages": [
+    {
+      "page": "background.html",
+      "ids": 20
+    },
+    {
+      "page": "index.html",
+      "ids": 136
+    },
+    {
+      "page": "library.html",
+      "ids": 257
+    },
+    {
+      "page": "reader-apostles.html",
+      "ids": 15
+    },
+    {
+      "page": "reader-athanasian.html",
+      "ids": 15
+    },
+    {
+      "page": "reader-nicene.html",
+      "ids": 15
+    }
+  ],
+  "errors": [],
+  "fulltextsIdenticalToPreservedV2": true,
+  "fulltextsSHA256": "66f1c84251b80a77a57a3278036130d8564b6a173c9cabefd9dd7e72c72145ae",
+  "comparison": "All source-file characters unchanged after Git CRLF/LF normalization; all section text/html/source/hash fields also equal.",
+  "fulltextsJSONEqual": true
+}

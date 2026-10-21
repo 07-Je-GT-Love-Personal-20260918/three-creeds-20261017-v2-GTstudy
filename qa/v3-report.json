@@ -1,0 +1,57 @@
+{
+  "checked": "2026-10-21T03:43:10.724Z",
+  "themes": [
+    {
+      "theme": "forest",
+      "color": "rgb(246, 245, 236)"
+    },
+    {
+      "theme": "ocean",
+      "color": "rgb(239, 246, 250)"
+    },
+    {
+      "theme": "violet",
+      "color": "rgb(247, 242, 250)"
+    },
+    {
+      "theme": "amber",
+      "color": "rgb(252, 244, 229)"
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1920,
+      "scroll": 1920
+    },
+    {
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "width": 320,
+      "scroll": 320
+    }
+  ],
+  "coreNotes": 38,
+  "checks": [
+    "theme and dark mode",
+    "theme persistence",
+    "overlapping styles",
+    "personal note edit",
+    "persistence",
+    "export/import",
+    "hide/show",
+    "original text unchanged",
+    "shared original anchors across clean reader",
+    "dialogs responsive"
+  ],
+  "errors": []
+}
