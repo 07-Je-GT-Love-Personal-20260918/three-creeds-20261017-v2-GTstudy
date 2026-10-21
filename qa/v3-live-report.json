@@ -1,0 +1,23 @@
+{
+  "checked": "2026-10-21T03:50:00.133Z",
+  "results": [
+    {
+      "host": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/",
+      "http": 200,
+      "coreNotes": 38,
+      "themes": "switch and persist",
+      "marks": "save and persist",
+      "mobileOverflow": false,
+      "errors": []
+    },
+    {
+      "host": "https://three-creeds-20261021-v3-gtstudy.surge.sh/",
+      "http": 200,
+      "coreNotes": 38,
+      "themes": "switch and persist",
+      "marks": "save and persist",
+      "mobileOverflow": false,
+      "errors": []
+    }
+  ]
+}

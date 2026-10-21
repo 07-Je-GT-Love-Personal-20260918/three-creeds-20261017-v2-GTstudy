@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | GitHub Pages | https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/ | 核对记录见 deployment.json |
 | Surge | https://three-creeds-20261021-v3-gtstudy.surge.sh/ | 核对记录见 deployment.json |
-| Vercel | 待账号授权后填写实际生产地址 | 未部署，不将拟用域名当作已上线地址 |
+| Vercel | 待该仓库连接授权后填写实际生产地址 | 尚未部署；GitHub要求本人重新验证后授权该仓库 |
 
 源码仓库：https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy
 
@@ -78,6 +78,10 @@ python -m http.server 4173 -d dist
 
 主要源文件：`build.py`、`edition_v2.py`、`edition_v3.py`、`library.py`、模板及 `content/`。新增界面资源为 `dist/theme-init.js`、`dist/study.js`、`dist/study.css`。
 
-推送main后，GitHub Actions发布Pages与Surge；Pages使用OIDC，Surge使用仓库Secret `SURGE_TOKEN`。Vercel静态构建配置见 `vercel.json`，需账号授权后建立生产项目。凭据不入库，`.vercel/`、`.netlify/`及本地环境文件均忽略。
+推送main后，GitHub Actions发布Pages与Surge；Pages使用OIDC，Surge使用仓库Secret `SURGE_TOKEN`。Vercel静态构建配置见 `vercel.json`，浏览器中已核对指定账号；需GitHub本人重新验证并授权本仓库后建立生产项目。凭据不入库，`.vercel/`、`.netlify/`及本地环境文件均忽略。
 
 检查覆盖320/390/820/1440/1920px宽度、横向溢出、标题遮挡、图片、原典、四套配色、夜读、主题持久化、叠加标记、笔记编辑、导出导入、跨阅读页标记、字号、地图、动画及背诵。证据保存在 `qa/`；线上核验以 `deployment.json` 为准。
+
+## V3 上线核验（2026-10-21）
+
+Pages任务39540197667与Surge任务39540197642均成功，发布内容提交为b8e3f7e。两站各18项公开资源全部HTTP 200；每站232个正文单元均无差异。线上主题切换、刷新保存与个人标记通过浏览器实测。Vercel尚未创建项目，不能视为第三个已上线地址；仅其账号会话已核对。待完成GitHub对本仓库的连接授权后继续。
