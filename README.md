@@ -1,20 +1,33 @@
-# 三大信经深读 · GTstudy V3
+# 三大信经深读 · GTstudy V4
 
-主题：**使徒信经 · 尼西亚信经 · 亚他那修信经**。版本标识：**three-creeds-20261021-v3-GTstudy**（2026-10-21 · v3.0.0）。
+主题：**使徒信经 · 尼西亚信经 · 亚他那修信经**。版本标识：**three-creeds-20261024-v4-GTstudy**（2026-10-24 · v4.0.0）。
 
 ## 公开部署
 
 | 平台 | 地址 | 状态 |
 | --- | --- | --- |
 | GitHub Pages | https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/ | 核对记录见 deployment.json |
-| Surge | https://three-creeds-20261021-v3-gtstudy.surge.sh/ | 核对记录见 deployment.json |
+| Surge | https://three-creeds-20261024-v4-gtstudy.surge.sh/ | 核对记录见 deployment.json |
 | Vercel | 待该仓库连接授权后填写实际生产地址 | 尚未部署；GitHub要求本人重新验证后授权该仓库 |
 
 源码仓库：https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy
 
 这是原仓库的重命名，编号仍为 **1423064988**；提交历史、权限、恢复标签与仓库密钥保留。稳定仓库名包含主题与GTstudy，部署版本名另含日期与版本号。
 
-## V3 更新
+## V4：历史 · 地图 · 文化（2026-10-24）
+
+- 新增 `atlas.html` 独立学习页：三条概念示意、11个地理标记、10个历史文化现场、五步故事演示、希腊语与拉丁语表达对照。15项史料链接随条目列出。强调325/381/451年的文本层次、作者与传统名称的区别；南高卢仅为可能形成区域。
+- 本地Natural Earth地理图与示意图不依赖外部地图服务。现代地图点击后才加载，本地保存Leaflet 1.9.4及许可证，底图采用Esri World Street Map，并提供OpenStreetMap切换、故障提示和外部链接。地图可拖动缩放，现代底图不代表古代疆界或实时卫星影像，不能保证任何服务在全球所有网络均可连接。
+- 初始页面无外部资源请求；删除Google字体导入，使用本机字体。减少大面积模糊，离屏装饰动画暂停，阅读位置延迟保存，进度条采用合成变换，保留浏览器原生滚动。大型原典库按可见区域渲染。
+- 全站右下角收起式导航：返回、前进、顶部、底部、主页、历史地图。笔记支持快速选色、字色、实时样式预览、整段区块及搜索；旧笔记格式和存储键保留。
+- [地图页](https://three-creeds-20261024-v4-gtstudy.surge.sh/atlas.html)。原Surge地址继续更新V4作为兼容入口，原域名的浏览器笔记仍保留；换域名时需导出再导入，不能自动跨域同步。
+- V3已固定于标签 `v3.0.0-20261021-preserved-20261024`；V2固定发布版继续保留。全文源文件未变更。
+
+性能对照见 `qa/v4-performance-report.json`：同机手机视口，模拟字体样式表延迟2000ms时，首屏内容绘制V3约2660ms、V4约648ms；本次滚动帧间隔P95约14ms与7ms。仅是受控单次对照，不承诺所有设备的固定性能。真实Esri视口10张图块已加载；全断网回退使用请求拦截测试，不抓取OSM图块。
+
+底图及工具说明：[Leaflet下载与本地部署](https://leafletjs.com/download.html)、[Esri底图服务元数据](https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer)、[OSM图块政策](https://operations.osmfoundation.org/policies/tiles/)。不预取或打包OSM在线图块；本地图使用独立的Natural Earth公版轮廓。
+
+## V3 功能（完整保留）
 
 - 四套一键切换配色：林间纸页、海盐晴蓝、葡萄暮紫、琥珀书灯；每套支持夜读并记住偏好。
 - 38组原创核心笔记，每组突出核心主张、必须分清的边界、三步推论与闭卷回忆。内容围绕三份信经，延伸背景保留在辅助页。
@@ -41,6 +54,7 @@
 
 | 页面 | 用途 |
 | --- | --- |
+| atlas.html | 历史、地图、文化与五步故事 |
 | index.html | 三经主线、38组深读、历史、地图、对比、背诵与笔记 |
 | reader-apostles.html | 使徒信经清洁阅读版 |
 | reader-nicene.html | 尼西亚信经清洁阅读版 |
@@ -76,12 +90,12 @@ python build.py
 python -m http.server 4173 -d dist
 ```
 
-主要源文件：`build.py`、`edition_v2.py`、`edition_v3.py`、`library.py`、模板及 `content/`。新增界面资源为 `dist/theme-init.js`、`dist/study.js`、`dist/study.css`。
+主要源文件：`edition_v4.py`、`build.py`、`edition_v2.py`、`edition_v3.py`、`library.py`、模板及 `content/`。V3界面资源为 `dist/theme-init.js`、`dist/study.js`、`dist/study.css`。
 
 推送main后，GitHub Actions发布Pages与Surge；Pages使用OIDC，Surge使用仓库Secret `SURGE_TOKEN`。Vercel静态构建配置见 `vercel.json`，浏览器中已核对指定账号；需GitHub本人重新验证并授权本仓库后建立生产项目。凭据不入库，`.vercel/`、`.netlify/`及本地环境文件均忽略。
 
 检查覆盖320/390/820/1440/1920px宽度、横向溢出、标题遮挡、图片、原典、四套配色、夜读、主题持久化、叠加标记、笔记编辑、导出导入、跨阅读页标记、字号、地图、动画及背诵。证据保存在 `qa/`；线上核验以 `deployment.json` 为准。
 
-## V3 上线核验（2026-10-21）
+## V3 历史上线核验（2026-10-21）
 
 Pages任务39540869984与Surge任务39540870145均成功，发布内容提交为438871c。两站各18项公开资源全部HTTP 200；每站232个正文单元均无差异。线上主题切换、刷新保存与个人标记通过浏览器实测。Vercel尚未创建项目，不能视为第三个已上线地址；仅其账号会话已核对。待完成GitHub对本仓库的连接授权后继续。

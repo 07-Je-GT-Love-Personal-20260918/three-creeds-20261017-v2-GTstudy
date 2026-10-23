@@ -1,0 +1,9 @@
+{
+  "checked": "2026-10-23T23:37:21.198Z",
+  "provider": "Esri World Street Map",
+  "loadedTiles": 10,
+  "allVisibleTilesLoaded": true,
+  "liveNetwork": true,
+  "storyControls": true,
+  "scope": "Single local browser viewport; not a worldwide availability guarantee."
+}

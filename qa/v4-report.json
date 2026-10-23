@@ -1,0 +1,156 @@
+{
+  "checked": "2026-10-23T23:36:53.703Z",
+  "sizes": [
+    {
+      "file": "index.html",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "file": "index.html",
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "file": "index.html",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "file": "atlas.html",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "file": "atlas.html",
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "file": "atlas.html",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "file": "atlas.html",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "file": "library.html",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "file": "library.html",
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "file": "library.html",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "file": "library.html",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "file": "background.html",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "file": "background.html",
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "file": "background.html",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "file": "background.html",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "file": "reader-apostles.html",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "file": "reader-apostles.html",
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "file": "reader-apostles.html",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "file": "reader-apostles.html",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "file": "reader-nicene.html",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "file": "reader-nicene.html",
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "file": "reader-nicene.html",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "file": "reader-nicene.html",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "file": "reader-athanasian.html",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "file": "reader-athanasian.html",
+      "width": 820,
+      "scroll": 820
+    },
+    {
+      "file": "reader-athanasian.html",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "file": "reader-athanasian.html",
+      "width": 320,
+      "scroll": 320
+    }
+  ],
+  "cultureCards": 10,
+  "routeCards": 3,
+  "localMapPoints": 11,
+  "initialRemoteRequests": 0,
+  "mapFailure": "pass with blocked remote services",
+  "mapControls": "pass with mocked raster tiles",
+  "noteBlock": "save/persist/hide pass",
+  "quickInk": "pass",
+  "searchNotes": "pass",
+  "navigation": "back/forward/top/bottom/home pass",
+  "errors": []
+}

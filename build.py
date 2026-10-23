@@ -5,6 +5,7 @@ import json, re, shutil, hashlib
 from html.parser import HTMLParser
 from edition_v2 import guide,hub,synthesis,supporting_page,icon
 from edition_v3 import core_note,essentials,enhance_pages
+from edition_v4 import build_atlas,enhance_v4
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
@@ -15,6 +16,13 @@ fw['places']=fw['places'][:7]+[
  {'name':'阿奎莱亚／Aquileia','lat':45.77,'lon':13.368,'body':'鲁非努的受洗宣认与解释见证了西方信仰表达在地域之间的差异，帮助我们理解使徒信经逐步定型的过程。','culture':'意大利东北的拉丁教会处于东西交流的交通网络中。地方受洗宣认具有共同骨架，也存在具体词句差异。'},
  {'name':'以弗所／Ephesus','lat':37.941,'lon':27.341,'body':'431年会议的争论围绕道成肉身者的位格统一。它帮助说明：马利亚所生的是神的儿子成为人，不是她创造了神性。','culture':'小亚细亚的希腊语城市；基督论争论发生在释经、敬拜称谓、主教关系与帝国政治交织的教会生活中。'},
  {'name':'托莱多／Toledo','lat':39.858,'lon':-4.024,'body':'589年第三次托莱多会议处于西哥特王国由亚流传统转向尼西亚信仰的背景，是“和子”条款在西方传播的重要节点。','culture':'伊比利亚的拉丁教会与王国宗教转向密切相关；西方礼仪传播史不能直接等同381年东方希腊文本。'}]
+culture_v4=json.loads((CONTENT/'history-culture-v4.json').read_text(encoding='utf-8'))
+for entry in culture_v4['places']:
+    match=next((p for p in fw['places'] if abs(p['lat']-entry['lat'])+abs(p['lon']-entry['lon'])<.7),None)
+    if match:
+        match.update({'id':entry['id'],'body':entry['why'],'culture':entry['culture']})
+    else:
+        fw['places'].append({'id':entry['id'],'name':entry['name'],'lat':entry['lat'],'lon':entry['lon'],'body':entry['why'],'culture':entry['culture']})
 comm = json.loads((CONTENT/'commentary.json').read_text(encoding='utf-8'))
 full_path=CONTENT/'fulltexts.json'
 full=json.loads(full_path.read_text(encoding='utf-8')) if full_path.exists() else {'documents':[]}
@@ -113,7 +121,7 @@ def map_svg():
                 d=' '.join(('M' if i==0 else 'L')+f'{xy(*p)[0]:.1f},{xy(*p)[1]:.1f}' for i,p in enumerate(coords))+' Z'
                 parts.append(f'<path class="land" d="{d}"/>')
         base_path.write_text(''.join(parts),encoding='utf-8')
-    parts=['<svg class="map" viewBox="0 0 960 480" role="img" aria-labelledby="map-title map-desc"><title id="map-title">信经历史地图</title><desc id="map-desc">欧洲与东地中海的10个历史地点。点击标记或下方按钮查看详细说明。相邻城市用引线错开标记，圆点才是其真实近似位置。</desc><defs><clipPath id="map-clip"><rect width="960" height="480"/></clipPath></defs><g clip-path="url(#map-clip)">']
+    parts=['<svg class="map" viewBox="0 0 960 480" role="img" aria-labelledby="map-title map-desc"><title id="map-title">信经历史地图</title><desc id="map-desc">欧洲与东地中海的11个历史地点。点击标记或下方按钮查看详细说明。相邻城市用引线错开标记，圆点才是其真实近似位置。</desc><defs><clipPath id="map-clip"><rect width="960" height="480"/></clipPath></defs><g clip-path="url(#map-clip)">']
     for lon in range(-10,50,10):
         x,_=xy(lon,0);parts.append(f'<path class="gridline" d="M{x},0V480"/>')
     for lat in range(30,60,10):
@@ -173,5 +181,7 @@ if (CONTENT/'text-comparison.md').exists():shutil.copyfile(CONTENT/'text-compari
 if docs:
     from library import build_library
     build_library(ROOT,docs,safe_original)
+atlas_data=build_atlas(ROOT,fw,map_svg())
 enhance_pages(ROOT)
+enhance_v4(ROOT,fw,atlas_data)
 print(f'Built {len(html):,} characters; 38 commentary units; {len(ids)} unique anchors.')

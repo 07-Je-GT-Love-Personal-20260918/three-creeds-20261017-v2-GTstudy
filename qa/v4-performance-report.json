@@ -1,0 +1,38 @@
+{
+  "checked": "2026-10-23T14:51:26.382Z",
+  "scenario": "Same local browser, phone viewport, remote font stylesheet artificially delayed by 2000ms. One run per version; indicative test, not a guarantee for every device.",
+  "results": [
+    {
+      "version": "V3",
+      "remoteRequestsAtStartup": 1,
+      "paints": [
+        {
+          "name": "first-paint",
+          "ms": 2660
+        },
+        {
+          "name": "first-contentful-paint",
+          "ms": 2660
+        }
+      ],
+      "scrollFrameP95ms": 14,
+      "blurLayers": 4
+    },
+    {
+      "version": "V4",
+      "remoteRequestsAtStartup": 0,
+      "paints": [
+        {
+          "name": "first-paint",
+          "ms": 648
+        },
+        {
+          "name": "first-contentful-paint",
+          "ms": 648
+        }
+      ],
+      "scrollFrameP95ms": 7,
+      "blurLayers": 0
+    }
+  ]
+}

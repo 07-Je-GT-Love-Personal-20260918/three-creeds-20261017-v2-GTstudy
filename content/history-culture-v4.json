@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "title": "十个现场，读懂三经为何这样说",
+    "checkedAt": "2026-10-23",
+    "scope": "以下是历史教学释义，不是信经或信条引文。直接原文仍以 CCI 校对版为准。",
+    "mapNote": "坐标标示现代城市或约略文化区域，帮助理解距离与联系；不重建古代疆界，不表达现代主权判断。连线表示论题关联，不表示人物实际旅行路线。",
+    "method": "历史背景说明争论如何发生，圣经决定教义是否真实。文化传统有交错和例外，不能把城市、语言与某种神学机械绑定。",
+    "uncertainty": "现用尼西亚长文本须区分325年会议、381年传统归属与451年会议记录的见证。亚他那修信经不是亚他那修执笔；作者、准确成文年代与地点未定，南高卢仅为常见推测区域。"
+  },
+  "places": [
+    {
+      "id": "rome", "name": "罗马", "modernName": "Roma，意大利", "lat": 41.903, "lon": 12.496, "creed": "apostles",
+      "year": "早期受洗传统；1014年另有礼仪节点",
+      "why": "古罗马受洗宣认是使徒信经发展的关键参照。信徒公开承认同一福音，既受教，也让教会辨认其信仰。",
+      "culture": "帝国交通中心连接各地教会；早期教会并非纯拉丁语孤岛。地方宣认在传递中逐渐扩充，后来成为西方共同教学文本。",
+      "distinction": "使徒信经承接使徒福音，不等于十二使徒各写一句。1014年罗马礼仪采用含和子的尼西亚文本，也不是该教义首次出现。",
+      "recall": "罗马记什么？受洗宣认的传承；信仰源头与文本定型须分开。",
+      "sourceIds": ["rufinus", "canrc-apostles", "filioque"]
+    },
+    {
+      "id": "aquileia", "name": "阿奎莱亚", "modernName": "Aquileia，意大利东北部", "lat": 45.768, "lon": 13.368, "creed": "apostles",
+      "year": "约公元400年前后：鲁非努注释",
+      "why": "鲁非努逐项解释本地受洗宣认，并与罗马用语比较。地方差异留下真实证据：共同信仰可以先于统一的完整措辞。",
+      "culture": "亚得里亚海北端的贸易城市，连接地中海与中欧。航运、商路和教会教导使信仰跨区传播，并非一城封闭发明。",
+      "distinction": "鲁非努记载的地方措辞是历史见证；其降阴间解释，不应直接当作后来海德堡要理问答44问的同义复述。",
+      "recall": "阿奎莱亚记什么？看见地方版本，分清古代释义与改革宗释义。",
+      "sourceIds": ["rufinus", "unesco-aquileia"]
+    },
+    {
+      "id": "nicaea", "name": "尼西亚", "modernName": "İznik 伊兹尼克，土耳其", "lat": 40.429, "lon": 29.721, "creed": "nicene",
+      "year": "325年",
+      "why": "亚流争论迫使教会明确：子不是被造的最高中介，祂与父同具神性。若救主只是受造者，就不能成为教会敬拜的终点。",
+      "culture": "古代比提尼亚的东部罗马城市，以希腊语讨论为主。帝国支持使跨地会议得以聚集，却不能使皇权成为真理的来源。",
+      "distinction": "尼西亚不是法国尼斯。325年文本与今日常用长文本不能逐字画等号；同质用语服务于圣经所见证的父子关系。",
+      "recall": "325记什么？子属创造主一边，绝不属受造物一边。",
+      "sourceIds": ["nicaea-acts", "canrc-nicene"]
+    },
+    {
+      "id": "constantinople", "name": "君士坦丁堡", "modernName": "İstanbul 伊斯坦布尔欧洲岸，土耳其", "lat": 41.009, "lon": 28.98, "creed": "nicene",
+      "year": "381年；451年会议记录见证长文本",
+      "why": "会议重申尼西亚信仰，抵挡否认圣灵完整神性的教导。信经把圣灵与父、子共同受敬拜相连，保护施行救恩者的身份。",
+      "culture": "帝都、主教座与希腊语教会网络交会；海峡使欧亚相邻。教义讨论嵌在政治现实中，教义论证却不能被政治解释取代。",
+      "distinction": "381年会议与通行长文本关系密切；451年迦克墩记录提供重要文本见证。和子并非381年希腊文本原有措辞。",
+      "recall": "381记什么？圣灵是真神；325、381、451是三层历史见证。",
+      "sourceIds": ["constantinople-acts", "chalcedon-acts", "canrc-nicene"]
+    },
+    {
+      "id": "alexandria", "name": "亚历山大", "modernName": "Alexandria，埃及", "lat": 31.2, "lon": 29.919, "creed": "nicene",
+      "year": "四世纪亚流争论；五世纪基督论争论",
+      "why": "亚流争论从此城教会冲突扩展；亚他那修捍卫子的完整神性。后来居里禄强调：降生、受苦的主，是同一位永恒之子。",
+      "culture": "埃及的地中海港口，希腊语言与埃及文化长期交会。学术语汇帮助精确表达，但不能将整座城市简化为一种固定释经法。",
+      "distinction": "亚他那修的名字连接尼西亚信仰，却不能证明亚他那修信经由他写成；那篇信经属于较后的西方拉丁传统。",
+      "recall": "亚历山大记什么？维护真神之子；名字相同不等于作者相同。",
+      "sourceIds": ["ephesus-acts", "canrc-athanasian", "nam-alexandria"]
+    },
+    {
+      "id": "antioch", "name": "安提阿", "modernName": "Antakya 安塔基亚，土耳其；古罗马叙利亚地区", "lat": 36.202, "lon": 36.161, "creed": "all",
+      "year": "使徒时代；四至五世纪教义争论",
+      "why": "使徒行传记述这里的跨族群教会与差派。此地后来的神学网络，使基督真实人性与神人联合的表达成为重要课题。",
+      "culture": "希腊与罗马传统交错的叙利亚大城，商贸联系地中海和近东；马赛克与城居遗存让抽象教义回到真实城市生活。",
+      "distinction": "这里是奥龙特河畔安提阿，不是彼西底安提阿。安提阿传统不等于聂斯托利主义，更不能给所有本地作者贴同一标签。",
+      "recall": "安提阿记什么？福音跨族群；真人性必须保留，基督却不可拆成两位。",
+      "bible": "徒11:19—26；13:1—3",
+      "sourceIds": ["getty-antioch", "bma-antioch", "ephesus-acts"]
+    },
+    {
+      "id": "ephesus", "name": "以弗所", "modernName": "Selçuk 塞尔丘克附近遗址，土耳其", "lat": 37.94, "lon": 27.341, "creed": "athanasian",
+      "year": "431年",
+      "why": "会议阅读尼西亚信仰及居里禄致聂斯托利的书信。核心问题是：马利亚所生、在肉身受苦的，是否就是永恒之子本人？",
+      "culture": "爱琴海地区的古代港城，希腊、罗马与基督教历史叠加。今日遗址离海已有距离；古今海岸变化提醒我们不能照现代地图想象古代港口。",
+      "distinction": "称马利亚为上帝之母，旨在辨明所生者的位格，不是说她创造神性，也不是将她提升为神。431年的争论不能与449年会议混同。",
+      "recall": "431记什么？谁降生、谁受苦？同一位神子按人性为我们行动。",
+      "sourceIds": ["ephesus-acts", "unesco-ephesus"]
+    },
+    {
+      "id": "chalcedon", "name": "迦克墩", "modernName": "Kadıköy 卡德柯伊，伊斯坦布尔亚洲岸", "lat": 40.99, "lon": 29.027, "creed": "athanasian",
+      "year": "451年",
+      "why": "会议承认一位基督具完整神性与完整人性：联合没有取消区别，区别没有拆开救主。这为理解亚他那修信经后半部提供关键背景。",
+      "culture": "与帝都隔海相望；东方主教、罗马代表与帝国官员同场。翻译、术语和教会关系交织，不能把全部争论缩成一句政治口号。",
+      "distinction": "一位格回答是谁，两本性回答祂是什么。亚他那修信经没有因此成为451年会议的正式文件，也不能倒写为亚他那修亲历此会。",
+      "recall": "451记什么？一位是谁，两性是什么；不混合，也不分裂。",
+      "sourceIds": ["chalcedon-acts", "canrc-athanasian"]
+    },
+    {
+      "id": "toledo", "name": "托莱多", "modernName": "Toledo，西班牙", "lat": 39.858, "lon": -4.027, "creed": "nicene",
+      "year": "589年：第三次托莱多会议的重要节点",
+      "why": "西哥特王国离开亚流派信仰、接纳尼西亚正统，成为西方圣灵由父及子发出表述传播的重要背景。",
+      "culture": "后罗马时代的伊比利亚拉丁教会；王权转向、公共认信与礼仪实践相互关联。信经同时进入讲台、教导与共同敬拜。",
+      "distinction": "589年是重要传播节点，不宜简化成所有地方自此统一加词。改革宗接受和子，却仍应承认东方对教义表达与修改程序的双重异议。",
+      "recall": "托莱多记什么？西方和子的传播；永恒发出、历史差遣与文本修订须分开。",
+      "sourceIds": ["filioque", "canrc-nicene"]
+    },
+    {
+      "id": "gaul", "name": "南高卢文化区", "modernName": "以阿尔勒附近作区域示意，今法国南部", "lat": 43.677, "lon": 4.63, "creed": "athanasian",
+      "year": "约五至六世纪的西方背景；六世纪初已有见证",
+      "why": "亚他那修信经以对称句式守住三一与道成肉身两条界限。它让教导者反复辨别：不可混淆位格，不可分割神性。",
+      "culture": "拉丁西方教理教育、修道生活与奥古斯丁三一论影响交会。南高卢常被讨论为来源区域，地图点位只是教学示意。",
+      "distinction": "西方拉丁来源有依据，确切作者、成文年与城市未定。南高卢不可标成已经证实的写作地址；本经也不是东西方普遍同等接纳的文本。",
+      "recall": "高卢记什么？拉丁西方的精密教导；传统名称不等于署名证据。",
+      "sourceIds": ["canrc-athanasian", "ilc-athanasian"]
+    }
+  ],
+  "storyline": [
+    {"step": "受洗承认", "places": ["rome", "aquileia"], "point": "先有使徒所传的救恩，再有教会共同宣认；地方文本见证同一福音的传承。"},
+    {"step": "辨明救主", "places": ["alexandria", "nicaea"], "point": "若子只是受造者，敬拜与救赎都会失去根基；因此必须说清子的完整神性。"},
+    {"step": "辨明圣灵", "places": ["constantinople"], "point": "使人得生命的灵同受敬拜；救恩不是一位真神加上两位次等助手的合作。"},
+    {"step": "辨明中保", "places": ["antioch", "ephesus", "chalcedon"], "point": "救主完整成为人，却始终是一位子；祂能代表我们，也真正将我们带到神面前。"},
+    {"step": "传承与精炼", "places": ["gaul", "toledo", "rome"], "point": "拉丁西方将教义用于教导与礼仪；接受历史有差异，认信仍须不断回到圣经检验。"}
+  ],
+  "sources": {
+    "rufinus": {"title": "鲁非努《使徒信经注释》：地方宣认与罗马差异", "url": "https://www.newadvent.org/fathers/2711.htm", "kind": "古代史料译文", "note": "采用正文所保存的地方差异；页面旧编者导言有明显年代排印问题，不据此设定精确成文年份。"},
+    "canrc-apostles": {"title": "加拿大改革宗教会：使徒信经历史导言", "url": "https://canrc.org/apostles-creed", "kind": "改革宗教会官方资料"},
+    "canrc-nicene": {"title": "加拿大改革宗教会：尼西亚信经历史导言", "url": "https://canrc.org/nicene-creed", "kind": "改革宗教会官方资料"},
+    "canrc-athanasian": {"title": "加拿大改革宗教会：亚他那修信经历史导言", "url": "https://canrc.org/athanasian-creed", "kind": "改革宗教会官方资料"},
+    "nicaea-acts": {"title": "325年尼西亚会议文本", "url": "https://www.newadvent.org/fathers/3801.htm", "kind": "古代会议文件译文"},
+    "constantinople-acts": {"title": "381年君士坦丁堡会议文件", "url": "https://www.newadvent.org/fathers/3808.htm", "kind": "古代会议文件译文"},
+    "ephesus-acts": {"title": "431年以弗所会议文件及居里禄书信", "url": "https://www.newadvent.org/fathers/3810.htm", "kind": "古代会议文件译文"},
+    "chalcedon-acts": {"title": "451年迦克墩会议记录与信仰定义", "url": "https://www.newadvent.org/fathers/3811.htm", "kind": "古代会议文件译文"},
+    "filioque": {"title": "北美正教会与天主教神学对话：和子问题历史梳理", "url": "https://www.usccb.org/resources/filioque-a-church-dividing-issue.pdf", "kind": "教会官方历史研究", "note": "仅用于核对接受历史，不表示采用对话文件全部神学结论。"},
+    "unesco-aquileia": {"title": "UNESCO：阿奎莱亚考古区及宗主教圣殿", "url": "https://whc.unesco.org/en/list/825/", "kind": "文化遗产官方资料"},
+    "unesco-ephesus": {"title": "UNESCO：以弗所遗址及海岸变迁", "url": "https://whc.unesco.org/en/list/1018/", "kind": "文化遗产官方资料", "note": "仅引用港城及地理变迁资料，不采用其关于敬虔来源的推断。"},
+    "nam-alexandria": {"title": "希腊国家考古博物馆：希腊化与托勒密时期", "url": "https://www.namuseum.gr/en/collection/hellenistic-ptolemaic-period/", "kind": "国家博物馆官方资料"},
+    "getty-antioch": {"title": "盖蒂博物馆：叙利亚与安提阿的罗马马赛克文化", "url": "https://www.getty.edu/publications/romanmosaics/catalogue/syria/", "kind": "博物馆学术出版"},
+    "bma-antioch": {"title": "巴尔的摩艺术博物馆：安提阿古城展历史介绍", "url": "https://artbma.org/press-release/bma-presents-antioch-the-lost-ancient-city/", "kind": "博物馆官方资料"},
+    "ilc-athanasian": {"title": "国际路德会协会：亚他那修信经的来源与内容", "url": "https://ilcouncil.org/files/2011/10/4-April_Athanasian-Creed.pdf", "kind": "教会官方教学资料", "note": "作者为西屋学院神学教师 Reg Quirk；仅用于核对南高卢来源的推测性质，不表示采用该传统全部教义。"}
+  }
+}
