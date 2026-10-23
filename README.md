@@ -101,3 +101,11 @@ python -m http.server 4173 -d dist
 Pages任务39540869984与Surge任务39540870145均成功，发布内容提交为438871c。两站各18项公开资源全部HTTP 200；每站232个正文单元均无差异。线上主题切换、刷新保存与个人标记通过浏览器实测。该段为V3当时状态：Vercel曾受账号与连接限制。V4已解决，现通过Actions向固定Vercel项目发布。
 
 V4检查报告：`qa/v4-report.json`（7页×4种宽度、断网回退、标记及导航）、`qa/v4-real-map-report.json`（真实Esri图块）、`qa/v4-performance-report.json`（受控性能对照）、`qa/v4-public-report.json`（三站公开资源及232单元核对）。
+
+## V4 最终公开验收（2026-10-24）
+
+发布源码提交：48975aa。Pages任务40041108007及Surge/Vercel任务40041108058均成功；Vercel生产部署状态READY。三个站点各24项资源全部HTTP 200，各站232个原文单元差异均为0。三站均实测主题切换及刷新保存、个人标记持久化、十个文化现场、五步故事、三组示意及地点导航，未发现控制台错误或手机横向溢出。旧Surge兼容入口也已核对为V4。
+
+V3恢复发布页：https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy/releases/tag/v3.0.0-20261021-preserved-20261024
+
+V4固定版：https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy/releases/tag/v4.0.0-20261024

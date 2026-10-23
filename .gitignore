@@ -7,3 +7,4 @@ countries.json
 __pycache__/
 
 .vercel/
+.vercel

@@ -9,19 +9,40 @@
   "vercelUrl": "https://three-creeds-20261024-v4-gtstudy.vercel.app/",
   "vercelStatus": "Production publicly accessible; GitHub Actions continuous deployment configured for the verified project.",
   "releasePreserved": "v2.0.0-20261017-preserved-20261021",
-  "status": "three production sites publicly accessible; final CI verification pending",
+  "status": "all three production sites verified",
   "sourceAudit": {
     "date": "2026-10-21",
     "liveUrls": 155,
     "sections": 232,
     "mismatches": 0
   },
-  "sourceCommit": null,
-  "verified": null,
-  "workflowRuns": {},
-  "publicChecks": {},
+  "sourceCommit": "48975aa4173d4cf3d3394090c34a8a727fef2c63",
+  "verified": "2026-10-24",
+  "workflowRuns": {
+    "pages": 40041108007,
+    "surgeAndVercel": 40041108058
+  },
+  "publicChecks": {
+    "hosts": 3,
+    "resourcesPerHost": 24,
+    "allHttp200": true,
+    "originalSectionsPerHost": 232,
+    "originalMismatches": 0,
+    "allPublicHTMLMatchesLocal": true,
+    "coreNotes": 38,
+    "historyCultureCards": 10,
+    "storyScenes": 5,
+    "conceptRoutes": 3,
+    "geographyMarkers": 11,
+    "onlineThemeAndNotes": "passed",
+    "mobileOverflow": false,
+    "consoleErrors": 0
+  },
   "surgeCompatibilityUrl": "https://three-creeds-20261021-v3-gtstudy.surge.sh/",
   "v3Preserved": "v3.0.0-20261021-preserved-20261024",
   "vercelProjectId": "prj_OCM9MwEbSOAMQ2pgDflt8l5OsFMx",
-  "vercelOrgId": "team_Wf2mIYmTmtSJvgOUqeQjBirL"
+  "vercelOrgId": "team_Wf2mIYmTmtSJvgOUqeQjBirL",
+  "vercelDeploymentId": "dpl_B8k2ZHbts5WQCfzN3FhwfThgLscX",
+  "vercelDeploymentStatus": "READY",
+  "compatibilityAliasVerified": true
 }
