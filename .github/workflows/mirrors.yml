@@ -1,4 +1,4 @@
-name: Publish Surge
+name: Publish Surge and Vercel
 on:
   push:
     branches: [main]
@@ -9,6 +9,23 @@ concurrency:
   group: mirrors
   cancel-in-progress: true
 jobs:
+  vercel:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_ORG_ID: team_Wf2mIYmTmtSJvgOUqeQjBirL
+      VERCEL_PROJECT_ID: prj_OCM9MwEbSOAMQ2pgDflt8l5OsFMx
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Link the verified Vercel project
+        run: node -e "const fs=require('fs');fs.mkdirSync('.vercel',{recursive:true});fs.writeFileSync('.vercel/project.json',JSON.stringify({orgId:process.env.VERCEL_ORG_ID,projectId:process.env.VERCEL_PROJECT_ID,projectName:'three-creeds-20261024-v4-gtstudy'}))"
+      - name: Inspect intended target
+        run: npx --yes vercel@50.1.5 project inspect three-creeds-20261024-v4-gtstudy --scope abners-projects-6f97a189 --token "$VERCEL_TOKEN"
+      - name: Publish Vercel production
+        run: npx --yes vercel@50.1.5 deploy --prod --yes --scope abners-projects-6f97a189 --token "$VERCEL_TOKEN"
   surge:
     runs-on: ubuntu-latest
     steps:

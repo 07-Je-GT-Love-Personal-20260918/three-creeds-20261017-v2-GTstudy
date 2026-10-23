@@ -38,7 +38,7 @@ def build_atlas(root,fw,map_svg):
     return data
 
 def enhance_v4(root,fw,data):
-    payload=json.dumps({'places':fw['places'],'culture':data.get('places',[])},ensure_ascii=False).replace('</','<\/')
+    payload=json.dumps({'places':fw['places'],'culture':data.get('places',[])},ensure_ascii=False).replace('</',r'<\/')
     dock='''<nav class="corner-nav" aria-label="快捷导航"><div class="corner-nav-panel" id="corner-nav-panel" hidden><button type="button" data-nav="back" title="返回上一页" aria-label="返回上一页">←<small>返回</small></button><button type="button" data-nav="forward" title="前进一页" aria-label="前进一页">→<small>前进</small></button><button type="button" data-nav="top" title="到顶部" aria-label="到顶部">↑<small>顶部</small></button><button type="button" data-nav="bottom" title="到底部" aria-label="到底部">↓<small>底部</small></button><a href="index.html" title="主页" aria-label="主页">⌂<small>主页</small></a><a href="atlas.html" title="历史地图" aria-label="历史地图">◎<small>地图</small></a></div><button type="button" class="corner-nav-toggle" aria-controls="corner-nav-panel" aria-expanded="false" title="快捷导航" aria-label="展开快捷导航">⌘</button></nav>'''
     for file in (root/'dist').glob('*.html'):
         html=file.read_text(encoding='utf-8')

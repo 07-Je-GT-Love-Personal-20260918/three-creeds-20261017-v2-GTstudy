@@ -165,7 +165,7 @@ def sources():
     return ''.join(output)
 
 html=(ROOT/'template.html').read_text(encoding='utf-8')
-slots={'ESSENTIALS':essentials(ROOT,docs),'TOC':toc(),'HUB':hub(),'MATRIX':synthesis(),'OVERVIEW':overview(),'TIMELINE':timeline(),'MAP':map_svg(),'COMPARISON':comparison(),'CREEDS':creeds(),'DIFFICULTIES':difficulties(),'SOURCES':sources(),'REPO':'https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy','DATA':json.dumps({'places':fw['places'],'originals':{k:docs[k]['sections'][0]['text'] for k in CREEDS if k in docs}},ensure_ascii=False).replace('</','<\/')}
+slots={'ESSENTIALS':essentials(ROOT,docs),'TOC':toc(),'HUB':hub(),'MATRIX':synthesis(),'OVERVIEW':overview(),'TIMELINE':timeline(),'MAP':map_svg(),'COMPARISON':comparison(),'CREEDS':creeds(),'DIFFICULTIES':difficulties(),'SOURCES':sources(),'REPO':'https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy','DATA':json.dumps({'places':fw['places'],'originals':{k:docs[k]['sections'][0]['text'] for k in CREEDS if k in docs}},ensure_ascii=False).replace('</',r'<\/')}
 for key,value in slots.items():html=html.replace('@@'+key+'@@',value)
 assert not re.search(r'@@[A-Z]+@@',html),'Unresolved template slots'
 ids=re.findall(r'\bid="([^"]+)"',html)

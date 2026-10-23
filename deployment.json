@@ -6,10 +6,10 @@
   "repository": "https://github.com/07-Je-GT-Love-Personal-20260918/three-creeds-GTstudy",
   "githubPagesUrl": "https://07-je-gt-love-personal-20260918.github.io/three-creeds-GTstudy/",
   "surgeUrl": "https://three-creeds-20261024-v4-gtstudy.surge.sh/",
-  "vercelUrl": null,
-  "vercelStatus": "Existing browser account verified as nieweide@outlook.com. GitHub App lacks this repository; configuring it requires user GitHub reauthentication. Direct browser upload also blocked by extension file-access setting.",
+  "vercelUrl": "https://three-creeds-20261024-v4-gtstudy.vercel.app/",
+  "vercelStatus": "Production publicly accessible; GitHub Actions continuous deployment configured for the verified project.",
   "releasePreserved": "v2.0.0-20261017-preserved-20261021",
-  "status": "V4 publishing",
+  "status": "three production sites publicly accessible; final CI verification pending",
   "sourceAudit": {
     "date": "2026-10-21",
     "liveUrls": 155,
@@ -21,5 +21,7 @@
   "workflowRuns": {},
   "publicChecks": {},
   "surgeCompatibilityUrl": "https://three-creeds-20261021-v3-gtstudy.surge.sh/",
-  "v3Preserved": "v3.0.0-20261021-preserved-20261024"
+  "v3Preserved": "v3.0.0-20261021-preserved-20261024",
+  "vercelProjectId": "prj_OCM9MwEbSOAMQ2pgDflt8l5OsFMx",
+  "vercelOrgId": "team_Wf2mIYmTmtSJvgOUqeQjBirL"
 }
